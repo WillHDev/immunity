@@ -1,4 +1,7 @@
 import Layout from '../components/Layout';
+import { withApollo } from '../lib/apollo';
+
+
 const Home = () => (
   <Layout>
 
@@ -76,4 +79,4 @@ const Home = () => (
   </Layout>
 )
 
-export default Home
+export default withApollo(Home);
